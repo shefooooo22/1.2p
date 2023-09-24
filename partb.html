@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Strings</h1>
+<h2>The length Property</h2>
+<p>The length of the string is:</p>
+<p id="demo"></p>
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+<p>The sliced (extracted) part of the string is:</p>
+<p id="demo"></p>
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>Extract a part of a string from position 7:</p>
+<p id="demo"></p>
+<h1>JavaScript Strings</h1>
+<h2>The slice() Method</h2>
+
+<p>Extract a part of a string counting from the end:</p>
+<p id="demo"></p>
+<h1>JavaScript String Methods</h1>
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<h2>JavaScript Numbers</h2>
+
+<p>Numbers can be written with or without decimals:</p>
+
+<p id="demo"></p>
+<h1>JavaScript String Methods</h1>
+<p>The substr() method extract a part of a string
+and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Numbers</h1>
+<h2>Integer Precision</h2>
+
+<p>Integers (numbers without a period or exponent notation) are accurate up to 15 digits:</p>
+
+<p id="demo"></p>
+
+<h1>JavaScript Numbers</h1>
+<h2>Floating Point Precision</h2>
+
+<p>Floating point arithmetic is not always 100% accurate.</p>
+
+<p id="demo"></p>
+<h2>JavaScript Numbers</h2>
+
+<p>If you add two numbers, the result will be a number:</p>
+
+<p id="demo"></p>
+<h2>JavaScript Numbers</h2>
+
+<p>If you add two numeric strings, the result will be a concatenated string:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p id="demo"></p>
+
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>Create a new date object with the current date and time:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p>A date object can be created with a specified date and time:</p>
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>new Date() without arguments, creates a date object with the current date and time:</p>
+
+<p id="demo"></p>
+
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+<p>Create a new date object with the current date and time:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p>A date object can be created with a specified date and time:</p>
+<p id="demo"></p>
+<h1>JavaScript Dates</h1>
+<h2>Using new Date()</h2>
+
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+
+<p>Call a function which performs a calculation and returns the result:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+
+<p>Invoke (call) a function that converts from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+
+<p>Invoke (call) a function to convert from Fahrenheit to Celsius:</p>
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+
+<p>Accessing a function without () returns the function and not the function result:</p>
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+<p>Using a function as a variable:</p>
+
+<p id="demo"></p>
+<h1>JavaScript Functions</h1>
+
+<p>Outside myFunction() carName is undefined.</p>
+
+<p id="demo1"></p>
+<p id="demo2"></p>
+
+
+
+
+
+<script>
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+document.getElementById("demo").innerHTML = text.length;
+let tex2t = "Apple, Banana, Kiwi";
+let part = text.slice(7,13);
+document.getElementById("demo").innerHTML = part; 
+let text3 = "Apple, Banana, Kiwi";
+let part1 = text.slice(7)
+document.getElementById("demo").innerHTML = part;
+let text4 = "Apple, Banana, Kiwi";
+let part2 = text.slice(-12);
+document.getElementById("demo").innerHTML = part;
+let str = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.substring(7,13);
+let x = 3.14;
+let y = 3;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+let str1 = "Apple, Banana, Kiwi";
+document.getElementById("demo").innerHTML = str.substr(7,6);
+let x1 = 999999999999999;
+let y2 = 9999999999999999;
+document.getElementById("demo").innerHTML = x + "<br>" + y;
+let x3 = 0.2 + 0.1;
+document.getElementById("demo").innerHTML = "0.2 + 0.1 = " + x;
+let x4 = 10;
+let y5 = 20;
+let z6 = x + y;
+document.getElementById("demo").innerHTML = z;
+let x7 = "10";
+let y8 = "20";
+let z = x + y;
+document.getElementById("demo").innerHTML = z;
+const d = new Date();
+document.getElementById("demo").innerHTML = d;
+const d1 = new Date("2022-03-25");
+document.getElementById("demo").innerHTML = d;
+const d3 = new Date();
+document.getElementById("demo").innerHTML = d;
+const d5 = new Date("October 13, 2014 11:13:00");
+document.getElementById("demo").innerHTML = d;
+const d6 = new Date("2022-03-25");
+document.getElementById("demo").innerHTML = d;
+const d7 = new Date();
+document.getElementById("demo").innerHTML = d;
+const d8 = new Date("2022-03-25");
+document.getElementById("demo").innerHTML = d;
+const d9 = new Date();
+document.getElementById("demo").innerHTML = d;
+const d11 = new Date("October 13, 2014 11:13:00");
+document.getElementById("demo").innerHTML = d;
+const d12 = new Date("2022-03-25");
+document.getElementById("demo").innerHTML = d;
+function myFunction(p1, p2) {
+  return p1 * p2;
+}
+
+let result = myFunction(4, 3);
+document.getElementById("demo").innerHTML = result;
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value = toCelsius(77);
+document.getElementById("demo").innerHTML = value;
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value1 = toCelsius();
+document.getElementById("demo").innerHTML = value;
+function toCelsius(f) {
+  return (5/9) * (f-32);
+}
+
+let value3 = toCelsius;
+document.getElementById("demo").innerHTML = value;
+let text5 = "The temperature is " + toCelsius(77) + " Celsius.";
+document.getElementById("demo").innerHTML = text;
+
+function toCelsius(fahrenheit) {
+  return (5/9) * (fahrenheit-32);
+} 
+let text6 = "Outside: " + typeof carName;
+document.getElementById("demo1").innerHTML = text;
+
+function myFunction() {
+  let carName = "Volvo";
+  let text = "Inside: " + typeof carName + " " + carName; 
+  document.getElementById("demo2").innerHTML = text;
+}
+
+</script>
+
+</body>
+</html>
